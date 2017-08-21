@@ -1,4 +1,4 @@
-package org.testng.training;
+package se.ericsson.mje.training.testng;
 
 
 /**

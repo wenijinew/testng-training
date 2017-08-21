@@ -1,0 +1,55 @@
+TestNG Training:
+
+Level 1: Write a TestNG test and run it in Eclipse.
+	1.1 Knows about org.testng.annotations.Test & org.testng.Assert - different from assert keyword of Java (-ea) P.S. JcatAssertApi called InternalAssert into which the TestNG assert API code is completely copied.
+	1.2 Knows about difference between Java assert keyword and TestNG Assert class
+	1.3 Knows about the TestNG test result report - test-output/index.html.
+	1.4 Knows about the entry of TestNG test execution and testng.xml file.
+	
+Level 2: Basic configuration methods by annotations
+	1.1 Knows about what annotations can be used for configuration methods - @BeforeXXX and @AfterXXX, except for @BeforeGroups and @AfterGroups
+	1.2 Knows about the basic execution life-cycle related to configuration methods and test methods. 
+
+Level 3: Groups
+	3.1: Knows about how to define groups in TestNG class and testng.xml file - groups of groups.
+	3.2: Knows about how to run groups in class and package.
+	3.3: Knows about how to run configuration method related to groups.
+
+Level 4: Parameterization
+	4.1: Knows about how to define test method parameters
+	4.2: Knows about how to define parameters in testng.xml file in suite and test level
+	4.3: Knows about how to use DataProvider - normal data provider and static data provider
+	4.4: Knows about return data type of data provider method 
+
+Level 5: Dependency
+	5.1: Knows about how to define dependency on methods and groups.
+	5.2: Knows about hard/soft dependency difference and usage.
+	5.3: Knows about dependency usage in testng.xml file.
+
+Level 6: Parallelism
+	6.1: Knows about how to use run suites/tests/classes/instances/methods in parallel respectively.
+	6.2: Knows about how to configure thread count in parallel execution.
+	6.3: Knows about how to define timeout value for parallel execution.
+
+*Level 7: Rerun failed test
+
+*Level 8: Junit test execution
+
+*Level 9: Run TestNg in your own program
+
+*Level 10: BeanShell usage 
+
+*Level 11: Annotation Transformers
+
+*Level 12: Method Interceptors
+
+Level 13: Listeners
+
+*Level 14: Dependency Injection
+
+*Level 15: IHookable Usage
+
+*Level 16: Altering Suites or Tests
+
+Level Final: TestNg Source Code Study
+	F1: Knows how TestNG collects Test Method and how to organize them - org.testng.TestClass.initMethods()

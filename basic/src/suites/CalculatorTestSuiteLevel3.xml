@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Level 3: Groups -->
 <suite name="Calculator Test Suite">
 	<!-- Group Usage -->
 	<test verbose="2" name="Calculator Test G1 - Run specified test methods by group">
@@ -9,7 +11,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="org.testng.training.CalculatorTestNgTest"/>
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31"/>
 		</classes> 
 	</test>
 	
@@ -20,7 +22,7 @@
 			</run>
 		</groups>
 		<packages>
-			<package name="org.testng.training"/>
+			<package name="se.ericsson.mje.training.testng"/>
 		</packages> 
 	</test>
 
@@ -36,19 +38,18 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="org.testng.training.CalculatorTestNgTest" />
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
 		</classes>
 	</test>
 	
-	<test verbose="2" name="Calculator Test G4 - Partial groups">
+	<test verbose="2" name="Calculator Test G4 - Partial groups in class">
 		<groups>
 			<run>
 				<include name="calculator-test" />
-				<exclude name="parameter"/>
 			</run>
 		</groups>
 		<classes>
-			<class name="org.testng.training.CalculatorTestNgTest" />
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
 		</classes>
 	</test>
 	
@@ -56,11 +57,12 @@
 		<groups>
 			<run>
 				<include name="calculator-test" />
-				<exclude name="parameter"/>
+				<exclude name="invalid"/>
+				<exclude name="basic"/>
 			</run>
 		</groups>
 		<packages>
-			<package name="org.testng.training" />
+			<package name="se.ericsson.mje.training.testng" />
 		</packages>
 	</test>
 </suite>  

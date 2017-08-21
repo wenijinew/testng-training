@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Calculator Test Suite">
-	<test verbose="2" name="Calculator Test N1 - Without Classes and Packages">
+
+<!-- 	<test verbose="2" name="Calculator Test N1 - Without Classes and Packages">
 		<groups>
 			<run>
 				<include name="basic"/>
 			</run>
 		</groups>
-	</test>
+	</test> -->
 
 <!-- 	<test verbose="2" name="Calculator Test N2 - Multiple run in groups">
 		<groups>
@@ -24,7 +25,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="org.testng.training.CalculatorTestNgTest" />
+			<class name="se.ericsson.mje.training.testng.CalculatorTestNgTest" />
 		</classes>
 	</test> -->
 </suite>  

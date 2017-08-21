@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.testng-training</groupId>
-  <artifactId>basic</artifactId>
+  <groupId>se.ericsson.mje.training</groupId>
+  <artifactId>testng</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>basic</name>
+  <name>testng-training</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -20,6 +20,11 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>6.11</version>
     </dependency>
   </dependencies>
 </project>
