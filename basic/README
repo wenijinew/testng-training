@@ -1,5 +1,13 @@
 TestNG Training:
 
+Level 0: 
+	0.1: TestNG Author: Cedric Beust
+	0.2: TestNG Site: http://testng.org
+	0.3: TestNG Projects
+		1. TestNG: https://github.com/cbeust/testng
+		2. Remote-TestNG: https://github.com/testng-team/testng-remote
+		3. TestNG-Eclipse: https://github.com/cbeust/testng-eclipse
+
 Level 1: Write a TestNG test and run it in Eclipse.
 	1.1 Knows about org.testng.annotations.Test & org.testng.Assert - different from assert keyword of Java (-ea) P.S. JcatAssertApi called InternalAssert into which the TestNG assert API code is completely copied.
 	1.2 Knows about difference between Java assert keyword and TestNG Assert class
@@ -44,12 +52,64 @@ Level 6: Parallelism
 *Level 12: Method Interceptors
 
 Level 13: Listeners
+	13.0: Difference between Listeners and Configuration Methods - @BeforeXXX / @AfterXXX?
+	13.1: org.testng.ITestNGListener - marker interface
+	13.2: 
+	org.testng.IExecutionListener
+		org.testng.ISuiteListener
+			org.testng.ITestListener
+				org.testng.IClassListener
+					org.testng.IConfigurationListener
+						org.testng.IInvokedMethodListener
+	13.3:*
+	org.testng.IAlterSuiteListener - Altering Suites or Tests - <listeners> or service loader
+	org.testng.IHookable - Overriding test methods - control test methods invocation in hook way.
+	org.testng.IMethodInterceptor - powerful control for test methods execution order for those without dependency
 
 *Level 14: Dependency Injection
 
 *Level 15: IHookable Usage
 
-*Level 16: Altering Suites or Tests
-
 Level Final: TestNg Source Code Study
-	F1: Knows how TestNG collects Test Method and how to organize them - org.testng.TestClass.initMethods()
+	F1: Knows how TestNG collects Test Method and how to organize them
+		org.testng.TestClass.initMethods()
+		org.testng.internal.TestNGMethodFinder.findConfiguration(Class, int)
+		
+	F2: Knows about how to build TestNG by source code:
+		$ git clone git://github.com/cbeust/testng.git
+		$ cd testng
+		$ ./build-with-gradle
+		
+	F3: JCAT Fixture and Usage in MJE
+		1. se.ericsson.jcat.fw.fixture.JcatFixture
+				se.ericsson.jcat.fw.fixture.JcatSuiteFixture
+				se.ericsson.jcat.fw.fixture.JcatTestCaseFixture
+				se.ericsson.jcat.fw.fixture.JcatConfigMethodFixture
+	
+		2. com.ericsson.msran.jcat.MsranTestNgListener.onExecutionStart()
+			com.ericsson.msran.jcat.ListenerHandler.loadListeners()
+				se.ericsson.jcat.fw.fixture.CommonSystemConfigFixture - initialize properties
+				se.ericsson.jcat.fw.fixture.CommonSuiteFixture - initialize logging structure, dispatch events
+			com.ericsson.msran.jcat.ListenerHandler.onExecutionStart()
+				se.ericsson.jcat.fw.fixture.testng.JcatNGSuiteListener.onExecutionStart()
+					se.ericsson.jcat.fw.fixture.FixtureHolder.onExecutionStart()
+		
+
+	F4: JCAT Event Subscriber
+		1. Event type: 
+		1.0: se.ericsson.jcat.fw.event.JcatEvent - marker interface - all event classes implements this interface
+		1.1: se.ericsson.jcat.fw.event.JcatLifeCycleEvent - interface for JCAT life-cycle events 
+			Each test life-cycle in JCAT has corresponding events and will call se.ericsson.jcat.fw.event.EventDispatcher.dispatch(JcatEvent) to notify subscriber about the event
+		1.2: se.ericsson.jcat.fw.event.JcatLoggingEvent - interface for JCAT logging events
+			se.ericsson.jcat.fw.event.EventDispatcher
+				se.ericsson.jcat.fw.event.EventDispatcher.loadAllSubscribers() - static block
+				se.ericsson.jcat.fw.event.EventDispatcher.dispatch(JcatEvent) - call in all places where events occurred
+		
+		2. Event Subscriber(class) and Event Handler(method) 
+		se.ericsson.jcat.fw.event.JcatEventSubscriber - marker interface - subscriber classes need to implement this interface
+		se.ericsson.jcat.fw.event.JcatEventHandler - annotation - subscriber classes need to have methods with this annotation to handle specified events
+		Example:
+		public class ChartLogWriter implements JcatEventSubscriber {
+			@JcatEventHandler(event = StartChartEvent.class)
+    		public void startNewChart(StartChartEvent event) {...}
+		}

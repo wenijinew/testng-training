@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Level 1: Write a TestNG test and run it in Eclipse. -->
+<suite name="Calculator Test Suite Level 1">
+	<listeners>
+		<listener class-name="se.ericsson.mje.training.testng.listeners.ExecutionListener"/>
+		<listener class-name="se.ericsson.mje.training.testng.listeners.SuiteListener"/>
+		<listener class-name="se.ericsson.mje.training.testng.listeners.TestListener"/>
+		<listener class-name="se.ericsson.mje.training.testng.listeners.ClassListener"/>
+		<listener class-name="se.ericsson.mje.training.testng.listeners.ConfigurationListener"/>
+		<listener class-name="se.ericsson.mje.training.testng.listeners.InvokedMethodListener"/>
+	</listeners>
+
+	<test verbose="2" name="Calculator Test B1 - Run all test methods">
+		<classes>
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel1" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="Calculator Test B2 - Run specified test methods by method name">
+		<classes>
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel1">
+				<methods>
+					<include name="testBasicSumPositive"/>
+					<include name="testBasicSumNegative"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="Calculator Test B3 - Run specified test methods by regular expression">
+		<classes>
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel1">
+				<methods>
+					<include name="testBasic.*"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>  
