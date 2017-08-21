@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Calculator Test Suite">
+	<!-- parameter definition in suite level -->
+	<parameter name="a" value="100" />
+	<parameter name="b" value="100" />
+
+	<test verbose="2" name="Calculator Test 1">
+		<groups>
+			<define name="all">
+				<include name="basic" />
+				<include name="advanced" />
+				<include name="parameter" />
+			</define>
+			<run>
+				<include name="all" />
+			</run>
+			<!-- <run> <include name="basic" /> <exclude name="positive" /> </run> -->
+		</groups>
+		<classes>
+			<class name="org.testng.training.CalculatorTestNgTest">
+
+			</class>
+		</classes>
+	</test>
+
+	<!-- Example 2: break DTD -->
+<!-- 	<test verbose="2" name="Calculator Test 2">
+		<groups>
+			<define name="all">
+				<include name="basic" />
+				<include name="advanced" />
+			</define>
+			<run>
+				<include name="all" />
+			</run>
+			<run>
+				<include name="basic" />
+				<exclude name="positive" />
+			</run>
+		</groups>
+		<classes>
+			<class name="org.testng.training.CalculatorTestNgTest">
+
+			</class>
+		</classes>
+	</test> -->
+
+	<!-- Example 3: Parameter -->
+	<test verbose="2" name="Calculator Test 3">
+		<!-- Parameter definition in Test level -->
+		<parameter name="a" value="101" />
+		<parameter name="b" value="101" />
+		
+		<classes>
+			<class name="org.testng.training.CalculatorTestNgTest">
+				<methods>
+					<include name="testWithParameters" />
+				</methods>				
+			</class>
+		</classes>
+	</test>
+
+</suite>  
