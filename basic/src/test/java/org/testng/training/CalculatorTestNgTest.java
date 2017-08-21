@@ -14,6 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -29,7 +30,7 @@ public class CalculatorTestNgTest {
      * 
      */
     @Test(groups = { "basic", "positive" })
-    public void testSumPositiveNumbersOneAndOne() {
+    public void testBasicSumPositiveNumbersOneAndOne() {
         Calculator calculator = new CalculatorImpl();
         Assert.assertEquals(calculator.add(1, 1), 2);
         out.println("\t\t\t\t\tTest Method - Basic & Positive");
@@ -39,7 +40,7 @@ public class CalculatorTestNgTest {
      * 
      */
     @Test(groups = { "basic", "negative" })
-    public void testSumNegativeNumbersOneAndOne() {
+    public void testBasicSumNegativeNumbersOneAndOne() {
         Calculator calculator = new CalculatorImpl();
         Assert.assertEquals(calculator.add(-1, -1), -2);
         out.println("\t\t\t\t\tTest Method - Basic & Negative");
@@ -78,6 +79,18 @@ public class CalculatorTestNgTest {
     }
 
     /**
+     * @param c
+     * @param d
+     */
+    @Parameters({ "c", "d" })
+    @Test(groups = { "parameter" })
+    public void testWithParametersAndOptional(int c, @Optional("1") int d) {
+        Calculator calculator = new CalculatorImpl();
+        Assert.assertEquals(calculator.add(c, d), c + d);
+        out.println("\t\t\t\t\tTest Method - Parameterized");
+    }
+
+    /**
      * @param a
      * @param b
      */
@@ -102,11 +115,22 @@ public class CalculatorTestNgTest {
     /**
      * @return Object[][]
      */
+    @SuppressWarnings("boxing")
     @DataProvider(name = "my-data")
     public Object[][] myDataProvider() {
         return new Object[][] {
                 { 102, 102 }, { 103, 103 }, { 104, 104 }
         };
+    }
+
+    /**
+     * 
+     */
+    @Test
+    public void testBasicSumPositiveAndNegagiveNumber() {
+        Calculator calculator = new CalculatorImpl();
+        Assert.assertEquals(calculator.add(100, -80), 20);
+        out.println("\t\t\t\t\tTest Method - Sum Positive and Negative Number");
     }
 
     /**
