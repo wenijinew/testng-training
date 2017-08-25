@@ -4,7 +4,7 @@
 <!-- Level 3: Groups -->
 <suite name="Calculator Test Suite">
 	<!-- Group Usage -->
-	<test verbose="2" name="Calculator Test G1 - Run specified test methods by group">
+<!-- 	<test verbose="2" name="Calculator Test G1 - Run specified test methods by group">
 		<groups>
 			<run>
 				<include name="basic"/>
@@ -13,9 +13,9 @@
 		<classes>
 			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31"/>
 		</classes> 
-	</test>
+	</test> -->
 	
-	<test verbose="2" name="Calculator Test G2 - Run specified test methods by group in package">
+<!-- 	<test verbose="2" name="Calculator Test G2 - Run specified test methods by group in package">
 		<groups>
 			<run>
 				<include name="basic"/>
@@ -24,7 +24,7 @@
 		<packages>
 			<package name="se.ericsson.mje.training.testng"/>
 		</packages> 
-	</test>
+	</test> -->
 
 	<test verbose="2" name="Calculator Test G3 - Define group of groups">
 		<groups>
@@ -41,7 +41,7 @@
 			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
 		</classes>
 	</test>
-	
+	<!-- 
 	<test verbose="2" name="Calculator Test G4 - Partial groups in class">
 		<groups>
 			<run>
@@ -64,5 +64,5 @@
 		<packages>
 			<package name="se.ericsson.mje.training.testng" />
 		</packages>
-	</test>
+	</test> -->
 </suite>  

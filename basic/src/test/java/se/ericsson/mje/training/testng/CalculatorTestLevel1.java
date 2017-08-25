@@ -23,9 +23,9 @@ public class CalculatorTestLevel1 {
         int actualResult = calculator.add(1, 1);
         int expectedResult = 2;
 
-        // assert actualResult == expectedResult;
+        assert actualResult == expectedResult;
 
-        Assert.assertEquals(actualResult, expectedResult, "2 is not the result of 1 plus 1!");
+        //Assert.assertEquals(actualResult, expectedResult, "2 is not the result of 1 plus 1!");
     }
 
     /**

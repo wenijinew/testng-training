@@ -7,7 +7,7 @@
 	<parameter name="a" value="100" />
 	<!-- <parameter name="b" value="100" /> -->
 
-	<test verbose="2" name="Calculator Test D1 - Run method depends on other methods">
+	<!-- <test verbose="2" name="Calculator Test D1 - Run method depends on other methods">
 		<classes>
 			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel5">
 				<methods>
@@ -18,22 +18,27 @@
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test> 
 	
+	<test verbose="2" name="Calculator Test D1 - Run method depends on other methods">
+		<classes>
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel5" />
+		</classes>
+	</test>
 	<test verbose="2"
 		name="Calculator Test D2 - Run method depends on other groups">
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestNgTest">
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel5">
 				<methods>
 					<include name="testBasicSumNegative"/>
 					<include name="testAdvancedSumNegative"/>
-					<include name="testBasicSumPositiveAndNegagiveNumber" />
+					<include name="testWithParameters" />
 				</methods>
 			</class>
 		</classes>
-	</test>
+	</test>-->
 	
-
+<!--
 	<test verbose="2" name="Calculator Test D3 - Group dependency">
 		<groups>
 			<run>
@@ -45,23 +50,24 @@
 			</dependencies>
 		</groups>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestNgTest" />
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel5" />
 		</classes>
-	</test>
+	</test>  -->
 	
 	<!-- Does the below configuration workable? NO!! The method belongs to that group is not loaded. -->
 	<!--  <test verbose="2"
 		name="Calculator Test D4 - Run method depends on other groups">
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestNgTest">
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel5">
 				<methods>
-					<include name="testBasicSumPositiveAndNegagiveNumber" />
+					<include name="testBasicSumNegative"/>
+					<include name="testAdvancedSumNegative" />
 				</methods>
 			</class>
 		</classes>
 	</test> -->
 	
-	<!-- Does the below configuration workable? NO!! The basic group is not specified in run. 
+	<!-- Does the below configuration workable? NO!! The basic group is not specified in run. -->
 	<test verbose="2" name="Calculator Test D5 - Group dependency">
 		<groups>
 			<run>
@@ -72,8 +78,8 @@
 			</dependencies>
 		</groups>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestNgTest" />
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel5" />
 		</classes>
 	</test> 
--->
+
 </suite>  

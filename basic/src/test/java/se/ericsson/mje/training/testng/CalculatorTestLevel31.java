@@ -86,7 +86,7 @@ public class CalculatorTestLevel31 {
     /**
      * 
      */
-    @BeforeMethod
+    @BeforeMethod(groups = "basic")
     public void beforeTestMethod() {
         out.println("\t\t\t\tBefore Test Method");
     }
@@ -94,7 +94,7 @@ public class CalculatorTestLevel31 {
     /**
      * 
      */
-    @AfterMethod
+    @AfterMethod(groups = "advanced")
     public void afterTestMethod() {
         out.println("\t\t\t\tAfter Test Method");
     }

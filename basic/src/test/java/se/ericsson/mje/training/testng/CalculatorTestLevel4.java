@@ -79,7 +79,7 @@ public class CalculatorTestLevel4 extends CalculatorTestLevel4ParentClass {
      * @param p1
      * @param p2
      */
-    @Test(dataProvider = "parentDataProvider", dataProviderClass = CalculatorTestLevel4ParentClass.class, groups = "parameter")
+    @Test(dataProvider = "parentDataProvider", groups = "parameter")
     public void testWithParentDataProvider(People p1, People p2) {
         out.println("Test Level 4: Parameter from Parent Class's DataProvider");
 
