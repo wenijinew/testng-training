@@ -25,7 +25,7 @@ public class CalculatorTestLevel2 {
      */
     @Test
     public void testBasicSumPositive() {
-        out.println("\t\t\t\t\t Test Level 2");
+        out.println("Test Level 2 - Positive");
 
         Calculator calculator = new CalculatorImpl();
 
@@ -40,9 +40,26 @@ public class CalculatorTestLevel2 {
     /**
      * 
      */
+    @Test
+    public void testBasicSumNegative() {
+        out.println("Test Level 2 - Negative");
+
+        Calculator calculator = new CalculatorImpl();
+
+        int actualResult = calculator.add(-1, -1);
+        int expectedResult = -2;
+
+        // assert actualResult == expectedResult;
+
+        Assert.assertEquals(actualResult, expectedResult, "-2 is not the result of -1 plus -1!");
+    }
+
+    /**
+     * 
+     */
     @BeforeMethod
     public void beforeTestMethod() {
-        out.println("\t\t\t\tBefore Test Method");
+        out.println("Before Test Method");
     }
 
     /**
@@ -50,7 +67,7 @@ public class CalculatorTestLevel2 {
      */
     @AfterMethod
     public void afterTestMethod() {
-        out.println("\t\t\t\tAfter Test Method");
+        out.println("After Test Method");
     }
 
     /**
@@ -58,7 +75,7 @@ public class CalculatorTestLevel2 {
      */
     @BeforeClass
     public void beforeTestClass() {
-        out.println("\t\t\tBefore Test Class");
+        out.println("Before Test Class");
     }
 
     /**
@@ -66,7 +83,7 @@ public class CalculatorTestLevel2 {
      */
     @AfterClass
     public void afterTestClass() {
-        out.println("\t\t\tAfter Test Class");
+        out.println("After Test Class");
     }
 
     /**
@@ -74,7 +91,7 @@ public class CalculatorTestLevel2 {
      */
     @BeforeTest
     public void beforeTest() {
-        out.println("\t\tBefore Test");
+        out.println("Before Test");
     }
 
     /**
@@ -82,7 +99,7 @@ public class CalculatorTestLevel2 {
      */
     @AfterTest
     public void afterTest() {
-        out.println("\t\tAfter Test");
+        out.println("After Test");
     }
 
     /**
@@ -90,7 +107,7 @@ public class CalculatorTestLevel2 {
      */
     @BeforeSuite
     public void beforeTestSuite() {
-        out.println("\tBefore Test Suite");
+        out.println("Before Test Suite");
     }
 
     /**
@@ -98,7 +115,7 @@ public class CalculatorTestLevel2 {
      */
     @AfterSuite
     public void afterTestSuite() {
-        out.println("\tAfter Test Suite");
+        out.println("After Test Suite");
     }
 
 }

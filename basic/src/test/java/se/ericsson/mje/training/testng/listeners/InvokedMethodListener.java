@@ -15,12 +15,12 @@ public class InvokedMethodListener implements IInvokedMethodListener {
     PrintStream out = System.out;
 
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
-        out.println("\t\t\t\t\t\t Listener: Before Invocation -" + method.getTestMethod().toString() + ", "
+        out.println("Listener: Before Invocation -" + method.getTestMethod().toString() + ", "
                 + testResult.getName());
     }
 
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-        out.println("\t\t\t\t\t\t Listener: After Invocation -" + method.getTestMethod().toString() + ", "
+        out.println("Listener: After Invocation -" + method.getTestMethod().toString() + ", "
                 + testResult.getName());
     }
 

@@ -14,11 +14,11 @@ public class ClassListener implements IClassListener {
     PrintStream out = System.out;
 
     public void onBeforeClass(ITestClass testClass) {
-        out.println("\t\t\t\t\t\t Listener: Before Class - " + testClass.getName());
+        out.println("Listener: Before Class - " + testClass.getName());
     }
 
     public void onAfterClass(ITestClass testClass) {
-        out.println("\t\t\t\t\t\t Listener: After Class - " + testClass.getName());
+        out.println("Listener: After Class - " + testClass.getName());
     }
 
 }

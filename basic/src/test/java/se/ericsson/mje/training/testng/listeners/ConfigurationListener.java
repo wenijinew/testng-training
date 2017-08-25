@@ -14,15 +14,15 @@ public class ConfigurationListener implements IConfigurationListener {
    PrintStream out = System.out;
 
    public void onConfigurationSuccess(ITestResult itr) {
-       out.println("\t\t\t\t\t Listener: Configuration Success -" + itr.getName());
+        out.println("Listener: Configuration Success -" + itr.getName());
    }
 
    public void onConfigurationFailure(ITestResult itr) {
-       out.println("\t\t\t\t\t Listener: Configuration Failure -" + itr.getName());
+        out.println("Listener: Configuration Failure -" + itr.getName());
    }
 
    public void onConfigurationSkip(ITestResult itr) {
-       out.println("\t\t\t\t\t Listener: Configuration Skip -" + itr.getName());
+        out.println("Listener: Configuration Skip -" + itr.getName());
    }
 
 }

@@ -14,11 +14,11 @@ public class SuiteListener implements ISuiteListener {
     PrintStream out = System.out;
 
     public void onStart(ISuite suite) {
-        out.println("\t\t Listener: Suite Start - " + suite.getName());
+        out.println("Listener: Suite Start - " + suite.getName());
     }
 
     public void onFinish(ISuite suite) {
-        out.println("\t\t Listener: Suite Finish - " + suite.getName());
+        out.println("Listener: Suite Finish - " + suite.getName());
     }
 
 }

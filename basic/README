@@ -1,7 +1,7 @@
 TestNG Training:
 
 Level 0: 
-	0.1: TestNG Author: Cedric Beust
+	0.1: TestNG Author: Cedric Beust(https://twitter.com/cbeust)
 	0.2: TestNG Site: http://testng.org
 	0.3: TestNG Projects
 		1. TestNG: https://github.com/cbeust/testng
@@ -52,7 +52,9 @@ Level 6: Parallelism
 *Level 12: Method Interceptors
 
 Level 13: Listeners
-	13.0: Difference between Listeners and Configuration Methods - @BeforeXXX / @AfterXXX?
+	13.0: Difference between Listeners and Configuration Methods - @BeforeXXX / @AfterXXX? 
+		Listeners - global
+		Configuration methods - local (suite/test/class/method)
 	13.1: org.testng.ITestNGListener - marker interface
 	13.2: 
 	org.testng.IExecutionListener

@@ -19,14 +19,14 @@ public class ExecutionListener implements IExecutionListener {
      * @see org.testng.IExecutionListener#onExecutionStart()
      */
     public void onExecutionStart() {
-        out.println("\t Listener: Execution Start");
+        out.println("Listener: Execution Start");
     }
 
     /* (non-Javadoc)
      * @see org.testng.IExecutionListener#onExecutionFinish()
      */
     public void onExecutionFinish() {
-        out.println("\t Listener: Execution Finish");
+        out.println("Listener: Execution Finish");
     }
 
 }
