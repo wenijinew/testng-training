@@ -28,7 +28,7 @@ public class CalculatorTestLevel31 {
      */
     @Test(groups = { "basic", "positive" })
     public void testBasicSumPositive() {
-        out.println("Test Level 31: Basic Positive");
+        out.println("Test Level 31-1: Basic Positive");
 
         Calculator calculator = new CalculatorImpl();
 
@@ -43,7 +43,7 @@ public class CalculatorTestLevel31 {
      */
     @Test(groups = { "basic", "negative" })
     public void testBasicSumNegative() {
-        out.println("Test Level 31: Basic Negative");
+        out.println("Test Level 31-2: Basic Negative");
 
         Calculator calculator = new CalculatorImpl();
 
@@ -58,7 +58,7 @@ public class CalculatorTestLevel31 {
      */
     @Test(groups = { "advanced", "positive" })
     public void testAdvancedSumPositive() {
-        out.println("Test Level 31: Advanced Positive");
+        out.println("Test Level 31-3: Advanced Positive");
 
         Calculator calculator = new CalculatorImpl();
 
@@ -73,7 +73,7 @@ public class CalculatorTestLevel31 {
      */
     @Test(groups = { "advanced", "negative" })
     public void testAdvancedSumNegative() {
-        out.println("Test Level 31: Advanced Negative");
+        out.println("Test Level 31-4: Advanced Negative");
 
         Calculator calculator = new CalculatorImpl();
 

@@ -56,6 +56,13 @@ Level 6: Parallelism
 	10.2: Knows about how to use BeanShell in suite xml file. 
 
 *Level 11: Annotation Transformers
+	11.1: Knows about the purpose of Annotation Transformers - 
+	11.2: Knows about the interface: org.testng.IAnnotationTransformer - an sub-interface of org.testng.ITestNGListener
+		11.2.1: org.testng.IAnnotationTransformer is used to modify the annotation:@Test
+		11.2.2: org.testng.IAnnotationTransformer2 can be used to modify any other annotations such as any configuration annotation or @Factory or @DataProvider
+	11.3: Knows about how to use the implementation in TestNG: 
+		11.3.1: java org.testng.TestNG -listener MyTransformer testng.xml
+		11.3.2: TestNG tng = new TestNG(); tng.setAnnotationTransformer(new MyTransformer());
 
 *Level 12: Method Interceptors
 

@@ -8,13 +8,22 @@
 		<method-selectors>
 			<method-selector>
 				<script language="beanshell"><![CDATA[
-				int dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
+				//1. TestNG defined variable "groups"
+				/*int dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
 				
 				if(dayOfWeek == Calendar.SATURDAY || dayOfWeek == Calendar.SUNDAY ){
 					return groups.containsKey("basic");
 				}else{
 					return groups.containsKey("advanced");
-				}
+				}*/
+				
+				//2. TestNG defined variable "method" - java.lang.reflect.Method - represent current test method
+				//return method.getName().contains("Basic");
+				
+				//3. TestNG defined variable "testngMethod" - org.testng.ITestNGMethod - represent wrapper class for current test method
+				return testngMethod.getMethodName().contains("Negative");
+				
+				//How TestNG intepret BeanShell expressions? I will tell you in next session. :)
 				]]></script>
 			</method-selector>
 		</method-selectors>
