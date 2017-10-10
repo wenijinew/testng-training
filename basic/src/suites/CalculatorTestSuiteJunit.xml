@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Level 8: Run Junit Test -->
+<suite name="Calculator Test Suite Level 8">
+
+	<test verbose="2" name="Calculator Test 81 - Junit 3 Test" junit="true">
+		<classes>
+			<class name="se.ericsson.mje.training.junit.CalculatorJunit3TestCase" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="Calculator Test 82 - Junit 3 Test" junit="true">
+		<classes>
+			<class name="se.ericsson.mje.training.junit.CalculatorJunit3TestSuite" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="Calculator Test 83 - Junit 3 Test" junit="true">
+		<classes>
+			<class name="se.ericsson.mje.training.junit.CalculatorJunit3TestCase">
+				<methods>
+					<include name="testBasicSumPositive"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>  

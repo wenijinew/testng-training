@@ -40,12 +40,20 @@ Level 6: Parallelism
 	6.3: Knows about how to define timeout value for parallel execution.
 
 *Level 7: Rerun failed test
+	7.1: Knows about the automatically generated suite xml file for failed test cases under the directory specified by -d. In default, it's $user.dir/test-output/testng-failed.xml.
+	7.2: Use joint commands or multiple suite xml file to run test and then failed test.
 
 *Level 8: Junit test execution
+	8.1: Knows about the configuration in suite xml file about junit test cases/suites execution.
+	8.2: Limitation?
 
 *Level 9: Run TestNg in your own program
+	9.1: Knows about how to run TestNg by programming.
+	9.2: Be familiar with TestNg APIs
 
 *Level 10: BeanShell usage 
+	10.1: Knows about what's BeanShell and it's basic usage.
+	10.2: Knows about how to use BeanShell in suite xml file. 
 
 *Level 11: Annotation Transformers
 
@@ -115,3 +123,8 @@ Level Final: TestNg Source Code Study
 			@JcatEventHandler(event = StartChartEvent.class)
     		public void startNewChart(StartChartEvent event) {...}
 		}
+
+Level 15: @Factory Usage
+	15.1: Knows about @Factory usage - create a class to provide a method with annotation @Factory. The method creates a number of Test class instances as return value.
+	15.2: Knows about configuration in suite xml file by using class with method having @Factory - just use the class name as value of <class name="" />
+	15.3: Knows about how TsetNG use / handle @Factory annotation.

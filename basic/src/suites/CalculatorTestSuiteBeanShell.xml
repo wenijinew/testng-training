@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Level 8: Run with BeanShell as method selector -->
+<suite name="Calculator Test Suite Level 10">
+
+	<test verbose="2" name="Calculator Test 10 - BeanShell Usage">
+		<method-selectors>
+			<method-selector>
+				<script language="beanshell"><![CDATA[
+				int dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
+				
+				if(dayOfWeek == Calendar.SATURDAY || dayOfWeek == Calendar.SUNDAY ){
+					return groups.containsKey("basic");
+				}else{
+					return groups.containsKey("advanced");
+				}
+				]]></script>
+			</method-selector>
+		</method-selectors>
+		<classes>
+			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
+		</classes>
+	</test>
+</suite>  
