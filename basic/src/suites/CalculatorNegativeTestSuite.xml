@@ -25,7 +25,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestNgTest" />
+			<class name="org.testng.training.CalculatorTestNgTest" />
 		</classes>
 	</test> -->
 </suite>  

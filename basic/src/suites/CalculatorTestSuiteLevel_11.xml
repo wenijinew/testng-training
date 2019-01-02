@@ -5,11 +5,11 @@
 <suite name="Calculator Test Suite Level 11">
 	<listeners>
 		<listener
-			class-name="se.ericsson.mje.training.testng.listeners.AnnotationTransformerImpl" />
+			class-name="org.testng.training.listeners.AnnotationTransformerImpl" />
 	</listeners>
 	<test verbose="2" name="Calculator Test 11 - Run all test methods and controlled by annotation transformer">
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
+			<class name="org.testng.training.CalculatorTestLevel31" />
 		</classes>
 	</test>
 </suite>  

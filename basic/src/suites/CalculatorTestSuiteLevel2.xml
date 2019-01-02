@@ -6,7 +6,7 @@
 
 	<test verbose="2" name="Calculator Test Level 2 - Run all test methods">
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel2" />
+			<class name="org.testng.training.CalculatorTestLevel2" />
 		</classes>
 	</test>
 </suite>  
