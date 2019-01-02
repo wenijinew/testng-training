@@ -8,6 +8,10 @@ public class RunTestNg {
 	}
 
 	public static void main(String[] strs) {
+		i1991(strs);
+	}
+
+	private static void i1991(String[] strs) {
 		String[] colors = { "Red", "White", "Black" };
 		for (String color : colors) {
 			System.setProperty("SkippedColor", color);
