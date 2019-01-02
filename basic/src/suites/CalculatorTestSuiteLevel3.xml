@@ -11,7 +11,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31"/>
+			<class name="org.testng.training.CalculatorTestLevel31"/>
 		</classes> 
 	</test> -->
 	
@@ -22,7 +22,7 @@
 			</run>
 		</groups>
 		<packages>
-			<package name="se.ericsson.mje.training.testng"/>
+			<package name="org.testng.training"/>
 		</packages> 
 	</test> -->
 
@@ -38,7 +38,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
+			<class name="org.testng.training.CalculatorTestLevel31" />
 		</classes>
 	</test>
 	<!-- 
@@ -49,7 +49,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
+			<class name="org.testng.training.CalculatorTestLevel31" />
 		</classes>
 	</test>
 	
@@ -62,7 +62,7 @@
 			</run>
 		</groups>
 		<packages>
-			<package name="se.ericsson.mje.training.testng" />
+			<package name="org.testng.training" />
 		</packages>
 	</test> -->
 </suite>  

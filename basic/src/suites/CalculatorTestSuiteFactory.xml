@@ -6,7 +6,7 @@
 
 	<test verbose="2" name="Calculator Test Factory - Create Test Instances by Factory">
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestFactory" />
+			<class name="org.testng.training.CalculatorTestFactory" />
 		</classes>
 	</test>
 </suite>  

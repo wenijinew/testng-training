@@ -28,7 +28,7 @@
 			</method-selector>
 		</method-selectors>
 		<classes>
-			<class name="se.ericsson.mje.training.testng.CalculatorTestLevel31" />
+			<class name="org.testng.training.CalculatorTestLevel31" />
 		</classes>
 	</test>
 </suite>  

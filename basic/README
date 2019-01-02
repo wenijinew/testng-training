@@ -9,7 +9,7 @@ Level 0:
 		3. TestNG-Eclipse: https://github.com/cbeust/testng-eclipse
 
 Level 1: Write a TestNG test and run it in Eclipse.
-	1.1 Knows about org.testng.annotations.Test & org.testng.Assert - different from assert keyword of Java (-ea) P.S. JcatAssertApi called InternalAssert into which the TestNG assert API code is completely copied.
+	1.1 Knows about org.testng.annotations.Test & org.testng.Assert - different from assert keyword of Java (-ea) 
 	1.2 Knows about difference between Java assert keyword and TestNG Assert class
 	1.3 Knows about the TestNG test result report - test-output/index.html.
 	1.4 Knows about the entry of TestNG test execution and testng.xml file.
@@ -96,40 +96,6 @@ Level Final: TestNg Source Code Study
 		$ git clone git://github.com/cbeust/testng.git
 		$ cd testng
 		$ ./build-with-gradle
-		
-	F3: JCAT Fixture and Usage in MJE
-		1. se.ericsson.jcat.fw.fixture.JcatFixture
-				se.ericsson.jcat.fw.fixture.JcatSuiteFixture
-				se.ericsson.jcat.fw.fixture.JcatTestCaseFixture
-				se.ericsson.jcat.fw.fixture.JcatConfigMethodFixture
-	
-		2. com.ericsson.msran.jcat.MsranTestNgListener.onExecutionStart()
-			com.ericsson.msran.jcat.ListenerHandler.loadListeners()
-				se.ericsson.jcat.fw.fixture.CommonSystemConfigFixture - initialize properties
-				se.ericsson.jcat.fw.fixture.CommonSuiteFixture - initialize logging structure, dispatch events
-			com.ericsson.msran.jcat.ListenerHandler.onExecutionStart()
-				se.ericsson.jcat.fw.fixture.testng.JcatNGSuiteListener.onExecutionStart()
-					se.ericsson.jcat.fw.fixture.FixtureHolder.onExecutionStart()
-		
-
-	F4: JCAT Event Subscriber
-		1. Event type: 
-		1.0: se.ericsson.jcat.fw.event.JcatEvent - marker interface - all event classes implements this interface
-		1.1: se.ericsson.jcat.fw.event.JcatLifeCycleEvent - interface for JCAT life-cycle events 
-			Each test life-cycle in JCAT has corresponding events and will call se.ericsson.jcat.fw.event.EventDispatcher.dispatch(JcatEvent) to notify subscriber about the event
-		1.2: se.ericsson.jcat.fw.event.JcatLoggingEvent - interface for JCAT logging events
-			se.ericsson.jcat.fw.event.EventDispatcher
-				se.ericsson.jcat.fw.event.EventDispatcher.loadAllSubscribers() - static block
-				se.ericsson.jcat.fw.event.EventDispatcher.dispatch(JcatEvent) - call in all places where events occurred
-		
-		2. Event Subscriber(class) and Event Handler(method) 
-		se.ericsson.jcat.fw.event.JcatEventSubscriber - marker interface - subscriber classes need to implement this interface
-		se.ericsson.jcat.fw.event.JcatEventHandler - annotation - subscriber classes need to have methods with this annotation to handle specified events
-		Example:
-		public class ChartLogWriter implements JcatEventSubscriber {
-			@JcatEventHandler(event = StartChartEvent.class)
-    		public void startNewChart(StartChartEvent event) {...}
-		}
 
 Level 15: @Factory Usage
 	15.1: Knows about @Factory usage - create a class to provide a method with annotation @Factory. The method creates a number of Test class instances as return value.
