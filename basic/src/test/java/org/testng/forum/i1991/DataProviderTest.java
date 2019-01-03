@@ -17,28 +17,32 @@ public class DataProviderTest {
 	}
 
 	@BeforeMethod(alwaysRun = true)
-	public void beforeMethod(Object[] obs) {
-		skippedColor = System.getProperty("SkippedColor");
-		String currentColor = obs[0].toString();
-		try {
-			if (currentColor.equals(skippedColor)) {
-				throw new SkipException("Skip:" + skippedColor);
+	public void beforeMethod(Object[] objs) {
+		if (objs != null && objs.length > 0) {
+			skippedColor = System.getProperty("SkippedColor");
+			String currentColor = objs[0].toString();
+			try {
+				if (currentColor.equals(skippedColor)) {
+					throw new SkipException("BeforeMethod: Skip Color:" + skippedColor);
+				}
+			} catch (SkipException se) {
+				se.printStackTrace();
+				throw se;
 			}
-		} catch (SkipException se) {
-			se.printStackTrace();
-			throw se;
+			System.out.println("BeforeMethod: Not Skipped Color:" + currentColor);
 		}
 	}
 
 	@Test(dataProvider = "colors")
 	public void show(String color) {
+		System.out.println("Test Method: show(String color): " + color + " -> " + this.getClass() + "'s instance:"
+				+ this.hashCode());
 		try {
 			Assert.assertNotEquals(color, skippedColor);
 		} catch (AssertionError ae) {
 			ae.printStackTrace();
 			System.err.println("Is this TestNg bug?");
 		}
-		System.out.println(color + " -> " + this.getClass() + "'s instance:" + this.hashCode());
 	}
 
 	@DataProvider(name = "colors")
