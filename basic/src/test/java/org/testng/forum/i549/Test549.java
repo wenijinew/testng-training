@@ -11,14 +11,34 @@ public class Test549 {
 
 	}
 
-	@BeforeMethod(groups = { GROUP_S1 })
+	@BeforeMethod(onlyForGroups = { GROUP_S1 })
 	public void beforeTc1() {
 		System.out.println("before tc1");
 	}
 
-	@AfterMethod(groups = { GROUP_S1 })
+	@AfterMethod(onlyForGroups = { GROUP_S1 })
 	public void afterTc1() {
-		System.out.println("before tc1");
+		System.out.println("after tc1");
+	}
+
+	@BeforeMethod(groups = { GROUP_S1 })
+	public void beforeAny() {
+		System.out.println("before any (more like a bug)");
+	}
+
+	@AfterMethod(groups = { GROUP_S1 })
+	public void afterAny() {
+		System.out.println("after any (more like a bug)");
+	}
+
+	@BeforeMethod
+	public void beforeAnyDefault() {
+		System.out.println("before any");
+	}
+
+	@AfterMethod
+	public void afterAnyDefault() {
+		System.out.println("after any");
 	}
 
 	@Test(groups = { GROUP_S1 })
