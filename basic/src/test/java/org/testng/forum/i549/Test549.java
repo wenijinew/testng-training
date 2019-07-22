@@ -1,5 +1,6 @@
 package org.testng.forum.i549;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,11 @@ public class Test549 {
 
 	@BeforeMethod(groups = { GROUP_S1 })
 	public void beforeTc1() {
+		System.out.println("before tc1");
+	}
+
+	@AfterMethod(groups = { GROUP_S1 })
+	public void afterTc1() {
 		System.out.println("before tc1");
 	}
 
