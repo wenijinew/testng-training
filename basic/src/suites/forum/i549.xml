@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Issue 549 Suite">
+	<test name="Issue 549 Test">
+		<classes>
+			<class name="org.testng.forum.i549.Test549">
+			<methods>
+			<include name="testTc2"/>
+			</methods>
+			</class>
+		</classes>
+	</test>
+</suite>  
