@@ -1,4 +1,4 @@
-# TestNG Training Exercise Project
+# TestNG Training Project
 
 
 ## TestNG Training Outline:
