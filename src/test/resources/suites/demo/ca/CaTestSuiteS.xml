@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite.06-5">
+    <test name="DemoTest.06-5-1">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.SubCaTestS" />
+        </classes>
+    </test>
+    <test name="DemoTest.06-5-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestA" />
+        </classes>
+    </test>
+    <test name="DemoTest.06-5-3">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestB" />
+        </classes>
+    </test>
+    <suite-files>
+        <!--
+        Methods @BeforeSuite and @AfterSuite only run in the suites which include the class where they are defined.
+        So, se.ericsson.training.testng.demo.ca.CaTestS.beforeSuite() and se.ericsson.training.testng.demo.ca.CaTestS
+        .afterSuite will not run for the following test suites.
+        -->
+        <suite-file path="../simple/TestSuite01.xml"/>
+        <suite-file path="../simple/TestSuite02.xml"/>
+    </suite-files>
+</suite>

@@ -1,0 +1,101 @@
+llog -l
+---------------------------------------------------
+No:       1
+Reason:   Ordered restart
+Time:     2000-01-01 00:42:46
+Program:  restart
+Pid:      -
+Rank:     Cold
+Signal:   -
+PMD:      -
+Extra:    Managed
+---------------------------------------------------
+No:       2
+Reason:   Ordered restart
+Time:     2000-01-01 00:02:23
+Program:  bc-server
+Pid:      -
+Rank:     Cold
+Signal:   -
+PMD:      -
+Extra:    Test restart board
+---------------------------------------------------
+No:       3
+Reason:   Program Crash
+Time:     2020-04-17 07:07:38
+Program:  bc-server
+Pid:      2579
+Rank:     -
+Signal:   -
+PMD:      -
+Extra:    CXP2030020%1_P93
+---------------------------------------------------
+No:       4
+Reason:   Program Crash
+Time:     2020-04-17 07:07:38
+Program:  -
+Pid:      -
+Rank:     Cold
+Signal:   -
+PMD:      -
+Extra:    -
+---------------------------------------------------
+No:       5
+Reason:   Program Crash
+Time:     2020-04-17 07:15:44
+Program:  bc-server
+Pid:      2592
+Rank:     -
+Signal:   -
+PMD:      -
+Extra:    CXP2030020%1_P93
+----------------------------------------------------
+No:       6
+Reason:   Program Crash
+Time:     2020-04-17 07:15:44
+Program:  another
+Pid:      2592
+Rank:     -
+Signal:   -
+PMD:      -
+Extra:    CXP2030020%1_P93
+---------------------------------------------------
+No:       7
+Reason:   Program Crash
+Time:     2020-04-17 07:15:44
+Program:  bc-server
+Pid:      2592
+Rank:     -
+Signal:   -
+PMD:      pmd-kernel-0-20200331-100359
+Extra:    CXP2030020%1_P93
+--------------------------------------------------
+No:       8
+Reason:   Program Crash
+Time:     2020-04-17 07:15:44
+Program:  -
+Pid:      -
+Rank:     Cold
+Signal:   -
+PMD:      pmd-kernel-0-20200331-100359
+Extra:    -
+---------------------------------------------------
+No:       9
+Reason:   Ordered restart
+Time:     2020-04-17 07:17:45
+Program:  restart
+Pid:      -
+Rank:     Cold
+Signal:   -
+PMD:      pmd-kernel-0-20200331-100359
+Extra:    Managed
+---------------------------------------------------
+No:       10
+Reason:   Fault detected
+Time:     2020-04-06 13:54:52
+Program:  rhsd
+Pid:      -
+Rank:     Cold
+Signal:   -
+PMD:      -
+Extra:    ICM CCR PLL LoL
