@@ -1,7 +1,7 @@
 # TestNG Training Project
 
 
-## TestNG Training Outline:
+## Outline:
 
 ### Level 0:
     0.1: TestNG Author: Cedric Beust(https://twitter.com/cbeust)
