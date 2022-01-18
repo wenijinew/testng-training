@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite.06-4">
+    <test name="DemoTest.06-4-1">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.CaTestT" />
+        </classes>
+    </test>
+
+    <!--
+    if <test> contains other class except for the class having methods with annotation @BeforeTest or @AfterTest,
+    then the methods with @BeforeTest will be executed before all test methods execution no matter whether those test
+    methods belong to the same class with the methods with @BeforeTest or not; and the methods with @AfterTest will
+    be executed after all test methods execution no matter whether those test methods belong to the same class with the methods with @AfterTest or not.
+    -->
+    <test name="DemoTest.06-4-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestA" />
+            <class name="se.ericsson.training.testng.demo.ca.CaTestT" />
+            <class name="se.ericsson.training.testng.demo.test.TestB" />
+        </classes>
+    </test>
+
+    <!--
+    if <test> doesn't contain the class which has methods annotated with @BeforeTest or @AfterTest, then those
+    methods will not be executed for this <test>.
+    -->
+    <test name="DemoTest.06-4-3">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestA" />
+        </classes>
+    </test>
+</suite>

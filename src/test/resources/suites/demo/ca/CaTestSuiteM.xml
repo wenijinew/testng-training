@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite.06-1">
+    <test name="DemoTest.06-1-1">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.CaTestM" />
+        </classes>
+    </test>
+    <test name="DemoTest.06-1-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.CaTestM">
+                <methods>
+                    <include name="testTC1"/>
+                </methods>
+            </class>
+            <!--Methods annotated @BeforeMethod and @AfterMethod in
+            se.ericsson.training.testng.demo.ca.CaTestM will not run when TestNG executes test methods in the class
+            se.ericsson.training.testng.demo.s1.TestA because Configuration Annotations work in locally rather
+            than globally: They only take effect in the scope where they are defined.-->
+            <class name="se.ericsson.training.testng.demo.test.TestA" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+Exercise A:
+A.1: Learn how to run TestNG suite by mvn, and java commands respectively.
+A.2: Learn the following TestNG listener interfaces and try to implement and use them
+org.testng.IConfigurationListener
+org.testng.IConfigurationListener2
+org.testng.IInvokedMethodListener
+
+Exercise B:
+Try to run suites/demo/FixMeTestSuite.xml.
+Analyze the test reuslt and find the root cause of the NullPointerException.
+Fix it!
+
