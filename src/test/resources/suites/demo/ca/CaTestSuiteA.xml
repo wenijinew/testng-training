@@ -4,7 +4,7 @@
 <suite name="DemoTestSuite.06-6">
     <test name="DemoTest.06-6-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.CaTestA" />
+            <class name="org.testng.training.testng.demo.ca.CaTestA" />
         </classes>
     </test>
     <!--
@@ -13,15 +13,15 @@
     -->
     <test name="DemoTest.06-6-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestB" />
+            <class name="org.testng.training.testng.demo.test.TestB" />
         </classes>
     </test>
     <!--@BeforeTest and @AfterTest will also "cover" the test methods in the class TestB because it's in the
     same test with class CaTestA which defined methods with Configuration Annotations-->
     <test name="DemoTest.06-6-3">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.CaTestA" />
-            <class name="se.ericsson.training.testng.demo.test.TestB" />
+            <class name="org.testng.training.testng.demo.ca.CaTestA" />
+            <class name="org.testng.training.testng.demo.test.TestB" />
         </classes>
     </test>
 </suite>

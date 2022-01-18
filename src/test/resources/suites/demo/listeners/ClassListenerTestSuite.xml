@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="DemoTestSuite.10-4">
     <listeners>
-        <listener class-name="se.ericsson.training.testng.demo.listeners.ClassListener"/>
+        <listener class-name="org.testng.training.testng.demo.listeners.ClassListener"/>
     </listeners>
     <test name="DemoTest.10-4-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
         </classes>
     </test>
     <test name="DemoTest.10-4-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestB" />
-            <class name="se.ericsson.training.testng.demo.test.TestC" />
+            <class name="org.testng.training.testng.demo.test.TestB" />
+            <class name="org.testng.training.testng.demo.test.TestC" />
         </classes>
     </test>
 </suite>

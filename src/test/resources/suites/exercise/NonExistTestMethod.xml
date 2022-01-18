@@ -4,7 +4,7 @@
     <test name="Negative.01-1">
         <!--The specified method doesn't exist in the class-->
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA">
+            <class name="org.testng.training.testng.demo.test.TestA">
                 <methods>
                     <include name="testTC333"/>
                 </methods>

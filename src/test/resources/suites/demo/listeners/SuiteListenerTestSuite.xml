@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="DemoTestSuite.10-2">
     <listeners>
-        <listener class-name="se.ericsson.training.testng.demo.listeners.SuiteListener" />
+        <listener class-name="org.testng.training.testng.demo.listeners.SuiteListener" />
     </listeners>
     <test name="DemoTest.10-2-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
         </classes>
     </test>
     <test name="DemoTest.10-2-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestB" />
+            <class name="org.testng.training.testng.demo.test.TestB" />
         </classes>
     </test>
     <!--exercise: use <suite-files></suite-files> to add another suite file here and run again-->

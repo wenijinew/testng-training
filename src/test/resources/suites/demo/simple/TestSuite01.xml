@@ -5,7 +5,7 @@
     <test name="DemoTest.01-1">
         <!--all @Test methods found in the class will be executed-->
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
         </classes>
     </test>
 </suite>
