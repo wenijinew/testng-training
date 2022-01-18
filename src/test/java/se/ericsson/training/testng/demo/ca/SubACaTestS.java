@@ -1,9 +1,9 @@
-package se.ericsson.training.testng.demo.ca;
+package org.testng.training.testng.demo.ca;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import se.ericsson.training.testng.demo.Constants;
+import org.testng.training.testng.demo.Constants;
 
 public class SubACaTestS extends SubCaTestS{
     @Test(groups = Constants.GROUP_CA1)

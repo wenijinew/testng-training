@@ -1,4 +1,4 @@
-package se.ericsson.training.testng.demo.test;
+package org.testng.training.testng.demo.test;
 
 import org.testng.annotations.*;
 

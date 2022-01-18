@@ -1,9 +1,9 @@
-package se.ericsson.training.testng.solution;
+package org.testng.training.testng.solution;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.demo.LogUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

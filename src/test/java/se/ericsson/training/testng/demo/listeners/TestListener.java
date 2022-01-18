@@ -1,9 +1,9 @@
-package se.ericsson.training.testng.demo.listeners;
+package org.testng.training.testng.demo.listeners;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.demo.LogUtils;
 
 
 /**

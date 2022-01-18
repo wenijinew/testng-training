@@ -1,4 +1,4 @@
-package se.ericsson.training.testng.demo;
+package org.testng.training.testng.demo;
 
 import org.testng.Assert;
 import org.testng.annotations.Optional;
@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import se.ericsson.training.testng.Calculator;
-import se.ericsson.training.testng.CalculatorImpl;
+import org.testng.training.testng.Calculator;
+import org.testng.training.testng.CalculatorImpl;
 
 public class ParametersTest extends DemoTestBase {
     private int a;

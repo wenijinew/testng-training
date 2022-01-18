@@ -1,7 +1,7 @@
-package se.ericsson.training.testng.demo;
+package org.testng.training.testng.demo;
 
 import org.testng.annotations.Factory;
-import se.ericsson.training.testng.demo.test.TestA;
+import org.testng.training.testng.demo.test.TestA;
 
 public class FactoryTest1 {
     // QUESTION: how to make this static variable configurable in suite XML file?

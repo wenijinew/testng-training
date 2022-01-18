@@ -1,4 +1,4 @@
-package se.ericsson.training.testng.demo;
+package org.testng.training.testng.demo;
 
 import java.util.HashMap;
 

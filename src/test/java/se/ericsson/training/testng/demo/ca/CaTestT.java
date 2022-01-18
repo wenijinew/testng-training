@@ -1,11 +1,11 @@
-package se.ericsson.training.testng.demo.ca;
+package org.testng.training.testng.demo.ca;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
-import se.ericsson.training.testng.Calculator;
-import se.ericsson.training.testng.CalculatorImpl;
-import se.ericsson.training.testng.demo.DemoTestBase;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.Calculator;
+import org.testng.training.testng.CalculatorImpl;
+import org.testng.training.testng.demo.DemoTestBase;
+import org.testng.training.testng.demo.LogUtils;
 
 /**
  * <p>Demo test class having methods annotated with <code>@BeforeTest</code> and <code>@AfterTest</code>.</p>

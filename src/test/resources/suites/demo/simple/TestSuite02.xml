@@ -5,14 +5,14 @@
     <test name="DemoTest.02-1">
         <classes>
             <!--All public methods with @Test annotation will run. Other public method(s) will be ignored.-->
-            <class name="se.ericsson.training.testng.demo.test.TestB"/>
+            <class name="org.testng.training.testng.demo.test.TestB"/>
         </classes>
     </test>
 
     <test name="DemoTest.02-2">
         <classes>
             <!--All public methods will run as test method because @Test is used on class.-->
-            <class name="se.ericsson.training.testng.demo.test.TestC"/>
+            <class name="org.testng.training.testng.demo.test.TestC"/>
         </classes>
     </test>
 </suite>

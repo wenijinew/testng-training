@@ -4,7 +4,7 @@
     <test name="Simple Test T1">
         <classes>
             <!--test methods will be executed according to priority values-->
-            <class name="se.ericsson.training.testng.demo.test.sub.TestH"/>
+            <class name="org.testng.training.testng.demo.test.sub.TestH"/>
         </classes>
     </test>
 </suite>

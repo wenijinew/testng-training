@@ -1,8 +1,8 @@
-package se.ericsson.training.testng.solution;
+package org.testng.training.testng.solution;
 
 import org.testng.IConfigurationListener2;
 import org.testng.ITestResult;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.demo.LogUtils;
 
 /**
  * <p>Implementation class of IConfigurationListener2 used to show how to handle the required business logic before

@@ -1,4 +1,4 @@
-package se.ericsson.training.testng;
+package org.testng.training.testng;
 
 
 public interface Calculator {

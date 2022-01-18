@@ -4,21 +4,21 @@
 <suite name="DemoTestSuite.06-2">
     <test name="DemoTest.06-2-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.CaTestC" />
+            <class name="org.testng.training.testng.demo.ca.CaTestC" />
         </classes>
     </test>
     <test name="DemoTest.06-2-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.CaTestC">
+            <class name="org.testng.training.testng.demo.ca.CaTestC">
                 <methods>
                     <include name="testTC2"/>
                 </methods>
             </class>
             <!--Methods annotated @BeforeClass and @AfterClass in
-            se.ericsson.training.testng.demo.ca.CaTestC will not run when TestNG executes test methods in the class
-            se.ericsson.training.testng.demo.s1.TestA because Configuration Annotations work in locally rather
+            org.testng.training.testng.demo.ca.CaTestC will not run when TestNG executes test methods in the class
+            org.testng.training.testng.demo.s1.TestA because Configuration Annotations work in locally rather
             than globally: They only take effect in the scope where they are defined.-->
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
         </classes>
     </test>
 </suite>
