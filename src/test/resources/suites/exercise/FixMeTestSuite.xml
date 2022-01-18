@@ -12,7 +12,7 @@ Time to onTestFailure:201905121:161837.894
 Time to onTestFailure:201905121:161837.894 // why printed twice? check org.testng.internal.Invoker.invokeMethod(...):
  org.testng.internal.Invoker.runTestListeners is called twice: line 559 and line 636.
 java.lang.NullPointerException
-    at se.ericsson.training.testng.exercise.FixMe.onTestFailure(FixMe.java:52)
+    at org.testng.training.testng.exercise.FixMe.onTestFailure(FixMe.java:52)
     at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
     at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
     at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1042)
@@ -38,15 +38,15 @@ Process finished with exit code 255
 
 ==== OUTPUT AFTER FIX: ====
 
-FixMe.testMe()[pri:0, instance:se.ericsson.training.testng.solution.FixMe@3c0ecd4b] - Start: 201905121_162031.748
+FixMe.testMe()[pri:0, instance:org.testng.training.testng.solution.FixMe@3c0ecd4b] - Start: 201905121_162031.748
 
 TC_001:TC Fix Me
 
-FixMe.testMe()[pri:0, instance:se.ericsson.training.testng.solution.FixMe@3c0ecd4b] - Time to onTestFailure: 201905121_162037.756
+FixMe.testMe()[pri:0, instance:org.testng.training.testng.solution.FixMe@3c0ecd4b] - Time to onTestFailure: 201905121_162037.756
 
-FixMe.testMe()[pri:0, instance:se.ericsson.training.testng.solution.FixMe@3c0ecd4b] - Duration (Solution 1) = 6008 milliseconds.
+FixMe.testMe()[pri:0, instance:org.testng.training.testng.solution.FixMe@3c0ecd4b] - Duration (Solution 1) = 6008 milliseconds.
 
-FixMe.testMe()[pri:0, instance:se.ericsson.training.testng.solution.FixMe@3c0ecd4b] - Duration (Solution 2) = 6007 milliseconds.
+FixMe.testMe()[pri:0, instance:org.testng.training.testng.solution.FixMe@3c0ecd4b] - Duration (Solution 2) = 6007 milliseconds.
 
 
 java.lang.AssertionError: expected [2] but found [3]
@@ -61,7 +61,7 @@ Actual   :3
     at org.testng.Assert.assertEquals(Assert.java:118)
     at org.testng.Assert.assertEquals(Assert.java:652)
     at org.testng.Assert.assertEquals(Assert.java:662)
-    at se.ericsson.training.testng.solution.FixMe.testMe(FixMe.java:63)
+    at org.testng.training.testng.solution.FixMe.testMe(FixMe.java:63)
     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,8 +91,8 @@ Actual   :3
 <suite name="Exercise Test Suite - FixMe">
     <test name="Test - FixMe">
         <classes>
-            <class name="se.ericsson.training.testng.exercise.FixMe" />
-            <!--<class name="se.ericsson.training.testng.solution.FixMe" />-->
+            <class name="org.testng.training.testng.exercise.FixMe" />
+            <!--<class name="org.testng.training.testng.solution.FixMe" />-->
         </classes>
     </test>
 </suite>

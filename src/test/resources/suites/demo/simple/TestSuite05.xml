@@ -12,13 +12,13 @@
         <!--groups is only an addon to classes or packages-->
         <!--you must use packages or classes to tell where to find @Test methods-->
         <packages>
-            <package name="se.ericsson.training.testng.demo.test.*"/>
+            <package name="org.testng.training.testng.demo.test.*"/>
         </packages>
     </test>
 
     <test name="DemoTest.05-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestE">
+            <class name="org.testng.training.testng.demo.test.TestE">
                 <methods>
                     <include name="testTC3" />
                 </methods>

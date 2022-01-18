@@ -6,7 +6,7 @@
     <parameter name="b" value="22"/>
     <test name="DemoTest.07-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ParametersTest">
+            <class name="org.testng.training.testng.demo.ParametersTest">
                 <methods>
                     <include name="testTC1">
                         <parameter name="a" value="1"/>
@@ -25,7 +25,7 @@
     </test>
     <test name="DemoTest.07-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ParametersTest">
+            <class name="org.testng.training.testng.demo.ParametersTest">
                 <methods>
                     <parameter name="a" value="21"/>
                     <parameter name="b" value="22"/>
@@ -43,7 +43,7 @@
     </test>
     <test name="DemoTest.07-3">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ParametersTest">
+            <class name="org.testng.training.testng.demo.ParametersTest">
                 <parameter name="a" value="31"/>
                 <parameter name="b" value="32"/>
                 <methods>
@@ -61,7 +61,7 @@
     </test>
     <test name="DemoTest.07-4">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ParametersTest">
+            <class name="org.testng.training.testng.demo.ParametersTest">
                 <methods>
                     <include name="testTC1" />
                     <include name="testTC2">
@@ -82,7 +82,7 @@
         <parameter name="a" value="51"/>
         <parameter name="b" value="52"/>
         <classes>
-            <class name="se.ericsson.training.testng.demo.ParametersTest">
+            <class name="org.testng.training.testng.demo.ParametersTest">
                 <methods>
                     <include name="testTC1" />
                     <include name="testTC2">
@@ -98,7 +98,7 @@
     </test>
     <test name="DemoTest.07-6">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ParametersTest">
+            <class name="org.testng.training.testng.demo.ParametersTest">
                 <methods>
                     <include name="testTC1" />
                     <include name="testTC2">

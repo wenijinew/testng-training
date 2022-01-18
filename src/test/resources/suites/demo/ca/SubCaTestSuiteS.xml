@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.SubACaTestS" />
+            <class name="org.testng.training.testng.demo.ca.SubACaTestS" />
         </classes>
     </test>
     <test name="DemoTest.06-5.1-2">
@@ -18,7 +18,7 @@
             </run>
         </groups>
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.SubBCaTestS" />
+            <class name="org.testng.training.testng.demo.ca.SubBCaTestS" />
         </classes>
     </test>
 </suite>

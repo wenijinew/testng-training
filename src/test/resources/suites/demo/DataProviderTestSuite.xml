@@ -4,7 +4,7 @@
 <suite name="DemoTestSuite.08">
     <test name="DemoTest.08-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.DataProviderTest"/>
+            <class name="org.testng.training.testng.demo.DataProviderTest"/>
         </classes>
     </test>
 </suite>

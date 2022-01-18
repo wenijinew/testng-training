@@ -3,7 +3,7 @@
 <suite name="DemoTestSuite.06-4">
     <test name="DemoTest.06-4-1">
         <classes>
-            <class name="se.ericsson.training.testng.demo.ca.CaTestT" />
+            <class name="org.testng.training.testng.demo.ca.CaTestT" />
         </classes>
     </test>
 
@@ -15,9 +15,9 @@
     -->
     <test name="DemoTest.06-4-2">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
-            <class name="se.ericsson.training.testng.demo.ca.CaTestT" />
-            <class name="se.ericsson.training.testng.demo.test.TestB" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.ca.CaTestT" />
+            <class name="org.testng.training.testng.demo.test.TestB" />
         </classes>
     </test>
 
@@ -27,7 +27,7 @@
     -->
     <test name="DemoTest.06-4-3">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
         </classes>
     </test>
 </suite>
