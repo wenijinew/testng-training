@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite.05">
+    <test name="DemoTest.05-1">
+        <!--all @Test methods belong to the group will run-->
+        <groups>
+            <run>
+                <!--exercise: change the group name to filter other test methods-->
+                <include name="Group_S1"/>
+            </run>
+        </groups>
+        <!--groups is only an addon to classes or packages-->
+        <!--you must use packages or classes to tell where to find @Test methods-->
+        <packages>
+            <package name="se.ericsson.training.testng.demo.test.*"/>
+        </packages>
+    </test>
+
+    <test name="DemoTest.05-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestE">
+                <methods>
+                    <include name="testTC3" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

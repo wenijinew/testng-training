@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite.10-3">
+    <listeners>
+        <listener class-name="se.ericsson.training.testng.demo.listeners.TestListener" />
+    </listeners>
+    <test name="DemoTest.10-3-1">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestA">
+                <methods>
+                    <include name="testA1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DemoTest.10-3-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestA">
+                <methods>
+                    <include name="testA2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DemoTest.10-3-3">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestC">
+                <methods>
+                    <include name="testC2"/>
+                    <include name="testC3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

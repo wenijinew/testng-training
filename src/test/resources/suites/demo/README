@@ -1,0 +1,11 @@
+Demo Test Suite.01      - Simple Test Suite                              - suites/demo/simple/TestSuite01.xml
+Demo Test Suite.02      - @Test usage difference in class and method     - suites/demo/simple/TestSuite02.xml
+Demo Test Suite.03      - Define test scope by <include>                 - suites/demo/simple/TestSuite03.xml
+Demo Test Suite.04      - Define test scope by <packages>                - suites/demo/simple/TestSuite04.xml
+Demo Test Suite.05      - Filter test scope by <groups>                  - suites/demo/simple/TestSuite05.xml
+Demo Test Suite.06-1~6  - Configuration Annotation(CA) usage             - suites/demo/ca/CaTestSuite[A|C|G|M|S|T].xml
+Demo Test Suite.07      - @Parameters usage                              - suites/demo/ParametersTestSuite.xml
+Demo Test Suite.08      - @DataProvider usage                            - suites/demo/DataProviderTestSuite.xml
+Demo Test Suite.09      - @Factory usage                                 - suites/demo/FactoryTestSuite.xml
+Demo Test Suite.10      - @Listener and Listener Interfaces Usage        - suites/demo/listeners/*TestSuite.xml
+Demo Test Suite.11      - Whole Test Lifecycle                           - suites/demo/LifecycleTestSuite.xml

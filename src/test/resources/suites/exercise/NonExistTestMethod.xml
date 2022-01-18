@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Negative Test Suite">
+    <test name="Negative.01-1">
+        <!--The specified method doesn't exist in the class-->
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestA">
+                <methods>
+                    <include name="testTC333"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

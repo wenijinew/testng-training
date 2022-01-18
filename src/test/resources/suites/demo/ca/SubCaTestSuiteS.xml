@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoTestSuite.06-5.1.1">
+    <test name="DemoTest.06-5.1-1">
+        <groups>
+            <run>
+                <include name="Group_CA1" />
+            </run>
+        </groups>
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.SubACaTestS" />
+        </classes>
+    </test>
+    <test name="DemoTest.06-5.1-2">
+        <groups>
+            <run>
+                <include name="Group_CA2" />
+            </run>
+        </groups>
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.SubBCaTestS" />
+        </classes>
+    </test>
+</suite>

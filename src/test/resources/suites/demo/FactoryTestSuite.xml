@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--@Factory Usage-->
+<suite name="DemoTestSuite.09">
+	<test name="DemoTest.09-1">
+		<classes>
+			<class name="se.ericsson.training.testng.demo.FactoryTest1" />
+		</classes>
+	</test>
+	<test name="DemoTest.09-2">
+		<classes>
+			<class name="se.ericsson.training.testng.demo.FactoryTest2" />
+			<parameter name="instanceTotal" value="100"/>
+		</classes>
+	</test>
+</suite>

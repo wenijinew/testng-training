@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--All Configuration Annotations-->
+<suite name="DemoTestSuite.06-6">
+    <test name="DemoTest.06-6-1">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.CaTestA" />
+        </classes>
+    </test>
+    <!--
+    Methods with Configuration Annotations (except for @BeforeSuite and @AfterSuite) defined in CaTestA will not run
+    for test "DemoTestSuite.06-6-2", because the class CaTestA is not included in test "DemoTestSuite.06-6-2".
+    -->
+    <test name="DemoTest.06-6-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.test.TestB" />
+        </classes>
+    </test>
+    <!--@BeforeTest and @AfterTest will also "cover" the test methods in the class TestB because it's in the
+    same test with class CaTestA which defined methods with Configuration Annotations-->
+    <test name="DemoTest.06-6-3">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ca.CaTestA" />
+            <class name="se.ericsson.training.testng.demo.test.TestB" />
+        </classes>
+    </test>
+</suite>

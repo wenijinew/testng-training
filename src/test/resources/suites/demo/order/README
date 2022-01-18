@@ -1,0 +1,15 @@
+===========================================================
+NOTE: This is not in MJE Training Course 1902 scope.
+===========================================================
+
+In this folder, it will run test cases to show all @Test attributes' usage.
+
+The test methods order operation is handled by: org.testng.internal.MethodHelper.collectAndOrderMethods
+The helper class to get comparator: org.testng.internal.Systematiser - In default, it will call  java.lang.String
+.compareTo(String anotherString).
+The String instance is return value of the method:  org.testng.internal.BaseTestMethod
+.computeSignature(), it looks like TestClassName.testMethodName(parameterName1,parameterName2)[pri:priorityValue,
+instance:].
+TestNG user can set the System property "testng.order" to decide the methods execution order if parallel is disabled.
+The options are: "methods" and "instances" which defined by org.testng.internal.Systematiser.Order.
+If choose "methods", it will order the methods by methods' names only.

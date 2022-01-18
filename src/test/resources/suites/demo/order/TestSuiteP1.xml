@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Simple Test Suite T1">
+    <test name="Simple Test T1">
+        <classes>
+            <!--test methods will be executed according to priority values-->
+            <class name="se.ericsson.training.testng.demo.test.sub.TestH"/>
+        </classes>
+    </test>
+</suite>
+

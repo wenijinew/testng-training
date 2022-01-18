@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--@Parameters Usage-->
+<suite name="DemoTestSuite.07">
+    <parameter name="a" value="11"/>
+    <parameter name="b" value="22"/>
+    <test name="DemoTest.07-1">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ParametersTest">
+                <methods>
+                    <include name="testTC1">
+                        <parameter name="a" value="1"/>
+                        <parameter name="b" value="2"/>
+                    </include>
+                    <include name="testTC2">
+                        <parameter name="c" value="3"/>
+                        <parameter name="d" value="4"/>
+                        <parameter name="testID" value="TC_DEMO_PARAMETERS_07-1"/>
+                        <parameter name="testHeading"
+                                   value="Configure parameters in &lt;include&gt;"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DemoTest.07-2">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ParametersTest">
+                <methods>
+                    <parameter name="a" value="21"/>
+                    <parameter name="b" value="22"/>
+                    <include name="testTC1" />
+                    <include name="testTC2">
+                        <parameter name="c" value="23"/>
+                        <parameter name="d" value="24"/>
+                        <parameter name="testID" value="TC_DEMO_PARAMETERS_07-2"/>
+                        <parameter name="testHeading"
+                                   value="Configure parameters in &lt;methods&gt;"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DemoTest.07-3">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ParametersTest">
+                <parameter name="a" value="31"/>
+                <parameter name="b" value="32"/>
+                <methods>
+                    <include name="testTC1" />
+                    <include name="testTC2">
+                        <parameter name="c" value="33"/>
+                        <parameter name="d" value="34"/>
+                        <parameter name="testID" value="TC_DEMO_PARAMETERS_07-3"/>
+                        <parameter name="testHeading"
+                                   value="Configure parameters in &lt;class&gt;"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DemoTest.07-4">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ParametersTest">
+                <methods>
+                    <include name="testTC1" />
+                    <include name="testTC2">
+                        <parameter name="c" value="43"/>
+                        <parameter name="d" value="44"/>
+                        <parameter name="testID" value="TC_DEMO_PARAMETERS_07-4"/>
+                        <parameter name="testHeading"
+                                   value="Configure parameters in &lt;classes&gt;"/>
+                    </include>
+                </methods>
+            </class>
+            <!--STRANGE DOCUMENT DEFINITION: WHY PARAMETER IS AFTER CLASSES? TO ASK FIX?-->
+            <parameter name="a" value="41"/>
+            <parameter name="b" value="42"/>
+        </classes>
+    </test>
+    <test name="DemoTest.07-5">
+        <parameter name="a" value="51"/>
+        <parameter name="b" value="52"/>
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ParametersTest">
+                <methods>
+                    <include name="testTC1" />
+                    <include name="testTC2">
+                        <parameter name="c" value="53"/>
+                        <parameter name="d" value="54"/>
+                        <parameter name="testID" value="TC_DEMO_PARAMETERS_07-5"/>
+                        <parameter name="testHeading"
+                                   value="Configure parameters in &lt;test&gt;"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="DemoTest.07-6">
+        <classes>
+            <class name="se.ericsson.training.testng.demo.ParametersTest">
+                <methods>
+                    <include name="testTC1" />
+                    <include name="testTC2">
+                        <parameter name="c" value="63"/>
+                        <parameter name="d" value="64"/>
+                        <parameter name="testID" value="TC_DEMO_PARAMETERS_07-6"/>
+                        <parameter name="testHeading"
+                                   value="Configure parameters in &lt;suite&gt;"/>
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
