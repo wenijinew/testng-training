@@ -8,15 +8,15 @@ org.testng.IInvokedMethodListener
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Solution A2 Suite">
     <listeners>
-        <listener class-name="se.ericsson.training.testng.solution.ConfigListenerImpl" />
-        <listener class-name="se.ericsson.training.testng.solution.InvokedMethodListenerImpl" />
+        <listener class-name="org.testng.training.testng.solution.ConfigListenerImpl" />
+        <listener class-name="org.testng.training.testng.solution.InvokedMethodListenerImpl" />
     </listeners>
 
     <test name="Solution A2 Test">
         <classes>
-            <class name="se.ericsson.training.testng.demo.test.TestA" />
-            <class name="se.ericsson.training.testng.demo.ca.CaTestM" />
-            <class name="se.ericsson.training.testng.demo.test.TestB" />
+            <class name="org.testng.training.testng.demo.test.TestA" />
+            <class name="org.testng.training.testng.demo.ca.CaTestM" />
+            <class name="org.testng.training.testng.demo.test.TestB" />
         </classes>
     </test>
 </suite>

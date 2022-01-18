@@ -1,11 +1,11 @@
-package se.ericsson.training.testng.demo.test.sub;
+package org.testng.training.testng.demo.test.sub;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import se.ericsson.training.testng.Calculator;
-import se.ericsson.training.testng.CalculatorImpl;
-import se.ericsson.training.testng.demo.DemoTestBase;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.Calculator;
+import org.testng.training.testng.CalculatorImpl;
+import org.testng.training.testng.demo.DemoTestBase;
+import org.testng.training.testng.demo.LogUtils;
 
 public class TestH extends DemoTestBase {
     @Test(priority = 9)

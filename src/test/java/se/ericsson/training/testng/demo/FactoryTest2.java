@@ -1,8 +1,8 @@
-package se.ericsson.training.testng.demo;
+package org.testng.training.testng.demo;
 
 import org.testng.annotations.Factory;
 import org.testng.annotations.Parameters;
-import se.ericsson.training.testng.demo.test.TestA;
+import org.testng.training.testng.demo.test.TestA;
 
 public class FactoryTest2 {
 

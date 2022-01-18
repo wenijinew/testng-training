@@ -1,12 +1,12 @@
 /**
  * 
  */
-package se.ericsson.training.testng.demo.listeners;
+package org.testng.training.testng.demo.listeners;
 
 import org.testng.IClassListener;
 import org.testng.IMethodInstance;
 import org.testng.ITestClass;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.demo.LogUtils;
 
 
 /**

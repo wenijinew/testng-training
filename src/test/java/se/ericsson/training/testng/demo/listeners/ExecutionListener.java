@@ -1,8 +1,8 @@
-package se.ericsson.training.testng.demo.listeners;
+package org.testng.training.testng.demo.listeners;
 
 import org.testng.IExecutionListener;
-import se.ericsson.training.testng.demo.Constants;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.demo.Constants;
+import org.testng.training.testng.demo.LogUtils;
 
 public class ExecutionListener implements IExecutionListener {
 

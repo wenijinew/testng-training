@@ -1,12 +1,12 @@
-package se.ericsson.training.testng.exercise;
+package org.testng.training.testng.exercise;
 
 import org.testng.*;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import se.ericsson.training.testng.Calculator;
-import se.ericsson.training.testng.CalculatorImpl;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.Calculator;
+import org.testng.training.testng.CalculatorImpl;
+import org.testng.training.testng.demo.LogUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

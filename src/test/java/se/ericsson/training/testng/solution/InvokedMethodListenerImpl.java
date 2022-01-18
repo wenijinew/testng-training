@@ -1,9 +1,9 @@
-package se.ericsson.training.testng.solution;
+package org.testng.training.testng.solution;
 
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.demo.LogUtils;
 
 /**
  * <p>Implementation of the interface {@link IInvokedMethodListener} to show how to handle the business logic before

@@ -1,12 +1,12 @@
-package se.ericsson.training.testng.solution;
+package org.testng.training.testng.solution;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import se.ericsson.training.testng.Calculator;
-import se.ericsson.training.testng.CalculatorImpl;
-import se.ericsson.training.testng.demo.LogUtils;
+import org.testng.training.testng.Calculator;
+import org.testng.training.testng.CalculatorImpl;
+import org.testng.training.testng.demo.LogUtils;
 
 /*
  * <p>

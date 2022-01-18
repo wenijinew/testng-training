@@ -5,14 +5,14 @@
         <!--all @Test methods found in the package will be executed-->
         <packages>
             <!--exercise: change package name and run again-->
-            <package name="se.ericsson.training.testng.demo.test"/>
+            <package name="org.testng.training.testng.demo.test"/>
         </packages>
     </test>
     <test name="DemoTest.04-2">
         <!--all @Test methods found in the package and subpackages will be executed-->
         <packages>
             <!--exercise: change package name regular expression and run again-->
-            <package name="se.ericsson.training.testng.demo.test.*" />
+            <package name="org.testng.training.testng.demo.test.*" />
         </packages>
     </test>
 </suite>

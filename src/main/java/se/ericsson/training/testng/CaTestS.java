@@ -1,4 +1,4 @@
-package se.ericsson.training.testng;
+package org.testng.training.testng;
 
 import org.testng.Assert;
 import org.testng.annotations.*;

@@ -4,12 +4,12 @@
 <suite name="DemoTestSuite.09">
 	<test name="DemoTest.09-1">
 		<classes>
-			<class name="se.ericsson.training.testng.demo.FactoryTest1" />
+			<class name="org.testng.training.testng.demo.FactoryTest1" />
 		</classes>
 	</test>
 	<test name="DemoTest.09-2">
 		<classes>
-			<class name="se.ericsson.training.testng.demo.FactoryTest2" />
+			<class name="org.testng.training.testng.demo.FactoryTest2" />
 			<parameter name="instanceTotal" value="100"/>
 		</classes>
 	</test>
