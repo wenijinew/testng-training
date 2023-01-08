@@ -5,7 +5,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.training.testng.demo.Constants;
 
-public class SubACaTestS extends SubCaTestS{
+public class SubACaTestS extends SubCaTestS {
+
     @Test(groups = Constants.GROUP_CA1)
     public void testTC1() {
         info(this + ":TC1");

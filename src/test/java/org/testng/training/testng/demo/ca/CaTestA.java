@@ -9,7 +9,9 @@ import org.testng.training.testng.demo.DemoTestBase;
 import org.testng.training.testng.demo.LogUtils;
 
 /**
- * <p>Demo test class having methods annotated with all Configuration Annotations(CA).</p>
+ * <p>
+ * Demo test class having methods annotated with all Configuration Annotations(CA).
+ * </p>
  */
 public class CaTestA extends DemoTestBase {
 
