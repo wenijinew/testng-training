@@ -9,12 +9,19 @@ import org.testng.training.testng.demo.DemoTestBase;
 import org.testng.training.testng.demo.LogUtils;
 
 /**
- * <p>Demo test class having methods annotated with <code>$BeforeGroup</code> and <code>@AfterGroup</code>.</p>
  * <p>
- * <b>Methods</b> annotated with <code>@BeforeGroup</code> and <code>@AfterGroup</code> will run before and after <b>Any</b>
- * test methods execution, if those test methods are defined in the <code>group(s)</code> with the attribute
- * <code>groups</code> of annotation <code>@Test</code> and that <code>group(s)</code> is also specified with the
- * attribute <code>value</code> of the annotation <code>@BeforeGroup</code> or <code>@AfterGroup</code> of the
+ * Demo test class having methods annotated with <code>$BeforeGroup</code> and
+ * <code>@AfterGroup</code>.
+ * </p>
+ * <p>
+ * <b>Methods</b> annotated with <code>@BeforeGroup</code> and <code>@AfterGroup</code> will run
+ * before and after <b>Any</b>
+ * test methods execution, if those test methods are defined in the <code>group(s)</code> with the
+ * attribute
+ * <code>groups</code> of annotation <code>@Test</code> and that <code>group(s)</code> is also
+ * specified with the
+ * attribute <code>value</code> of the annotation <code>@BeforeGroup</code> or
+ * <code>@AfterGroup</code> of the
  * <b>methods</b>.
  * </p>
  */
@@ -74,7 +81,7 @@ public class CaTestG extends DemoTestBase {
         Assert.assertEquals(result, 2);
     }
 
-    @Test(groups = { Constants.GROUP_S1})
+    @Test(groups = { Constants.GROUP_S1 })
     public void testTC3() {
         info(this + ": TC3");
 
@@ -83,7 +90,7 @@ public class CaTestG extends DemoTestBase {
         Assert.assertEquals(result, 2);
     }
 
-    @Test(groups = { Constants.GROUP_S1})
+    @Test(groups = { Constants.GROUP_S1 })
     public void testTC4() {
         info(this + ": TC4");
 

@@ -9,16 +9,21 @@ import org.testng.training.testng.demo.DemoTestBase;
 import org.testng.training.testng.demo.LogUtils;
 
 /**
- * <p>Demo test class having methods annotated with <code>@BeforeMethod</code> and <code>@AfterMethod</code>.</p>
  * <p>
- * Methods annotated with <code>@BeforeMethod</code> and <code>@AfterMethod</code> will run before and after
- * <b>EACH</b> test method execution, if those test methods are defined in the same class with the methods annotated
+ * Demo test class having methods annotated with <code>@BeforeMethod</code> and
+ * <code>@AfterMethod</code>.
+ * </p>
+ * <p>
+ * Methods annotated with <code>@BeforeMethod</code> and <code>@AfterMethod</code> will run before
+ * and after
+ * <b>EACH</b> test method execution, if those test methods are defined in the same class with the
+ * methods annotated
  * with <code>@BeforeMethod</code> and <code>@AfterMethod</code>. <br />
  * <b>Note: </b>it'simple allowed to define multiple methods with the
- * annotation <code>@BeforeGroup</code> or <code>@AfterGroup</code> That also applies to other Configuration
+ * annotation <code>@BeforeGroup</code> or <code>@AfterGroup</code> That also applies to other
+ * Configuration
  * Annotations(CA).
  * </p>
- *
  */
 public class CaTestM extends DemoTestBase {
 

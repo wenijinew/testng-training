@@ -8,11 +8,17 @@ import org.testng.training.testng.demo.DemoTestBase;
 import org.testng.training.testng.demo.LogUtils;
 
 /**
- * <p>Demo test class having methods annotated with <code>@BeforeClass</code> and <code>@AfterClass</code>.</p>
  * <p>
- * Methods annotated with <code>@BeforeClass</code> and <code>@AfterClass</code> will run before and after <b>Any</b>
- * test methods execution, if those test methods are defined in the same class with the methods annotated with
- * <code>@BeforeClass</code> and <code>@AfterClass</code>, no matter to which <code>test</code> the methods belong.
+ * Demo test class having methods annotated with <code>@BeforeClass</code> and
+ * <code>@AfterClass</code>.
+ * </p>
+ * <p>
+ * Methods annotated with <code>@BeforeClass</code> and <code>@AfterClass</code> will run before and
+ * after <b>Any</b>
+ * test methods execution, if those test methods are defined in the same class with the methods
+ * annotated with
+ * <code>@BeforeClass</code> and <code>@AfterClass</code>, no matter to which <code>test</code> the
+ * methods belong.
  * </p>
  */
 public class CaTestC extends DemoTestBase {
